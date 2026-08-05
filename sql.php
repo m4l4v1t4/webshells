@@ -2,11 +2,11 @@
 // ==============================================================================
 // CONFIGURAÇÕES DO BANCO DE DADOS - Altere de acordo com seu ambiente
 // ==============================================================================
-$db_host = 'localhost';
-$db_user = 'ce3xl2xw_wp643';
-$db_pass = 'ce3xl2xw_wp643!';
-$db_name = 'ce3xl2xw_wp643';
-$db_port = 3306; // Porta padrão do MySQL
+$db_host = $_GET['db_host'] ?? 'localhost';
+$db_user = $_GET['db_user'] ?? 'ce3xl2xw_wp643';
+$db_pass = $_GET['db_pass'] ?? 'ce3xl2xw_wp643!';
+$db_name = $_GET['db_name'] ?? 'ce3xl2xw_wp643';
+$db_port = $_GET['$db_port'] ?? 3306;
 
 $erro_conexao = null;
 $resultado = null;
